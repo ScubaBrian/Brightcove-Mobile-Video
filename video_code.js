@@ -21,8 +21,8 @@ $(document).ready(function() {
     });
 
     $(WHERE YOU WANT YOUR THUMBNAIL TO APPEAR).on( "click", '.video_thumbnail', function() {
-        var playerContainer = $('#video_player_container')
-        var currentVideo = $(this).attr('data-url');
+        let playerContainer = $('#video_player_container')
+        let currentVideo = $(this).attr('data-url');
         playerContainer.html("<video autoplay='autoplay' controls id='video_player'><source type='video/mp4' id='player_src' src='"+currentVideo+"'></video>");
         playerContainer.get(0).play();       
     });
